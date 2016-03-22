@@ -58,7 +58,7 @@ class StanfordViewController: UIViewController {
         // Line Chart Nr.1
         let stanfordData = CSVParser.sharedInstance.allData["stanford"]
         
-        let converted: CGFloat = stanfordData?.first as! CGFloat
+        let converted: CGFloat = stanfordData as [CGFloat]
         
         print(converted)
     
