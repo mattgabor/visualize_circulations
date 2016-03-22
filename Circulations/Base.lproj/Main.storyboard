@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="U1W-FQ-BDb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stanford -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Stanford " id="BYZ-38-t0r" customClass="StanfordViewController" customModule="Circulations" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +18,130 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Stanford Entrance Visitors" id="a4S-5j-m7h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2275" y="-45"/>
+        </scene>
+        <!--Ohlone Entrance Visitors-->
+        <scene sceneID="hqH-8Q-gOf">
+            <objects>
+                <viewController id="yfn-se-D2w" customClass="OhloneViewController" customModule="Circulations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lgq-iw-VpJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="loo-le-QWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOJ-bn-mDf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ohlone Entrance Visitors" id="EAG-mN-ifX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8Y-2e-DZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="668"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EqS-Q0-qC2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="U1W-FQ-BDb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="U4a-L0-WZ8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eW4-S2-kiL" kind="relationship" relationship="viewControllers" id="Kp6-zx-ab7"/>
+                        <segue destination="IU5-Pn-gZj" kind="relationship" relationship="viewControllers" id="LDV-z9-laI"/>
+                        <segue destination="cK5-Oe-TOO" kind="relationship" relationship="viewControllers" id="Ie4-ZH-NCE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmr-gl-rrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="235"/>
+        </scene>
+        <!--Stanford Entrance-->
+        <scene sceneID="fBv-JQ-M22">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eW4-S2-kiL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Stanford Entrance" image="spruce" id="0BD-Zb-g3X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8N-iJ-fn0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PhP-Bj-BJm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wru-xz-4VL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="-45"/>
+        </scene>
+        <!--Ohlone College Entrance-->
+        <scene sceneID="Bn0-Jx-Img">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IU5-Pn-gZj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ohlone College Entrance" image="quill_with_ink" id="MMT-vA-Jy6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OWU-8i-aG5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yfn-se-D2w" kind="relationship" relationship="rootViewController" id="dYq-Lt-Wlp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMb-MQ-QIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="668"/>
+        </scene>
+        <!--Combined Data-->
+        <scene sceneID="q5x-5Q-YnG">
+            <objects>
+                <viewController id="f5M-AU-AxO" customClass="CombinedViewController" customModule="Circulations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQz-H8-4y8"/>
+                        <viewControllerLayoutGuide type="bottom" id="SJ1-PF-3FO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMF-Hi-QWz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Combined Data" id="ldD-IL-7vY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nux-fM-waN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2307" y="1604"/>
+        </scene>
+        <!--Combined Data-->
+        <scene sceneID="NiK-1g-pqi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cK5-Oe-TOO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Combined Data" image="arrows" id="wKB-KE-gNg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QAD-Dc-Oqz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f5M-AU-AxO" kind="relationship" relationship="rootViewController" id="CgK-BF-cQU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItA-i9-Oo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="1604"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrows" width="30" height="30"/>
+        <image name="quill_with_ink" width="30" height="30"/>
+        <image name="spruce" width="30" height="30"/>
+    </resources>
 </document>
