@@ -8,30 +8,20 @@
 
 import UIKit
 import PNChartSwift
-import CoreData
 
 class StanfordViewController: UIViewController {
     
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     let screenSize: CGRect = UIScreen.mainScreen().bounds
-
+    var scrollView: UIScrollView!
     override func viewDidAppear(animated: Bool) {
         super.viewDidLoad()
         
-//        var error:NSError?
-        
-//        
-//        let contentsOfURL = NSBundle.mainBundle().pathForResource("/Users/mattgabor/Desktop/mission_peak_data.csv", ofType: nil)
-//        
-//        let url = NSURL(fileURLWithPath: "/Users/mattgabor/Desktop/mission_peak_data.csv")
-        
-//        let items = AppDelegate().parseCSV(url, encoding: NSUTF8StringEncoding, error: &error)
-        
-//        print(items)
-        
-    
+        // Data Conversion
         
         CSVParser.sharedInstance.parseData("mission_peak_data_min")
+    
         // Do any additional setup after loading the view, typically from a nib.
 
         let ChartLabel:UILabel = UILabel(frame: CGRectMake(0, 90, 320.0, 30))
@@ -43,27 +33,46 @@ class StanfordViewController: UIViewController {
         //Add LineChart
         ChartLabel.text = "Stanford Visitors"
         
-        let lineChartWidth: CGFloat = screenSize.width * 0.9
-        let lineChartHeight: CGFloat = screenSize.height *  0.6
+        // Portrait
+//        let lineChartWidth: CGFloat = screenSize.width * 0.9
+//        let lineChartHeight: CGFloat = screenSize.height *  0.6
+//        
+//        
+//        let lineChart:PNLineChart = PNLineChart(frame: CGRectMake((screenSize.width * 0.5) - (lineChartWidth * 0.5), (screenSize.height * 0.5) - (lineChartHeight * 0.5), lineChartWidth, lineChartHeight))
         
-        let lineChart:PNLineChart = PNLineChart(frame: CGRectMake((screenSize.width * 0.5) - (lineChartWidth * 0.5), (screenSize.height * 0.5) - (lineChartHeight * 0.5), lineChartWidth, lineChartHeight))
+        // Landscape
+//        let lsHeight = screenSize.width,
+//        lsWidth = screenSize.height
         
-        lineChart.yLabelFormat = "%1.1f"
-        lineChart.showLabel = true
+//        let lineChartWidth: CGFloat = lsWidth
+//        let lineChartHeight: CGFloat = lsHeight * 0.75
+//        let xVal: CGFloat = (lsWidth * 0.5) - (lineChartWidth * 0.5)
+//        let yVal: CGFloat = (lsHeight * 0.5) - (lineChartHeight * 0.5)
+        
+        // Hardcode 6+
+//        let lsHeight = 
+        let lsHeight: CGFloat = 414,
+        lsWidth: CGFloat = 736,
+        numberOfScreens: CGFloat = 2,
+        
+        lineChartWidth: CGFloat = lsWidth * numberOfScreens,
+        lineChartHeight: CGFloat = lsHeight * 0.62,
+        
+        xVal: CGFloat = 0,
+        yVal: CGFloat = 0,
+        
+        lineChart:PNLineChart = PNLineChart(frame: CGRectMake(xVal, yVal, lineChartWidth, lineChartHeight))
+        
+        lineChart.yLabelFormat = "%1f"
+        lineChart.showLabel = false
         lineChart.backgroundColor = UIColor.clearColor()
-        lineChart.xLabels = ["SEP 1","SEP 2","SEP 3","SEP 4","SEP 5","SEP 6","SEP 7"]
-        lineChart.showCoordinateAxis = true
+        lineChart.xLabels = CSVParser.sharedInstance.stringData["time"]!
+        lineChart.showCoordinateAxis = false
 //        lineChart.delegate = self
         
         // Line Chart Nr.1
-        let stanfordData = CSVParser.sharedInstance.allData["stanford"]
-        
-        let converted: CGFloat = stanfordData as [CGFloat]
-        
-        print(converted)
-    
-        var data01Array: [CGFloat] = [1.2]
-        //[60.1, 160.1, 126.4, 262.2, 186.2, 127.2, 176.2]
+
+        var data01Array: [CGFloat] = CSVParser.sharedInstance.numericalData["stanford"]!
         let data01:PNLineChartData = PNLineChartData()
         data01.color = Colors.lightRed
         data01.itemCount = data01Array.count
@@ -79,9 +88,28 @@ class StanfordViewController: UIViewController {
         
         //        lineChart.delegate = self
         lineChart.tag = 100
-        self.view.addSubview(lineChart)
-        //self.view.addSubview(ChartLabel)
+//        self.view.addSubview(lineChart)
+        
+        // Set up scroll view
+        let svRect =  CGRectMake(0, 100, view.bounds.width, lineChartHeight)
+        scrollView = UIScrollView(frame: svRect)
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.contentSize = lineChart.bounds.size
+//        scrollView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        scrollView.addSubview(lineChart)
+        self.view.addSubview(scrollView)
+        //scrollView.backgroundColor = UIColor.redColor()
     }
+    
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        
+//        if segmentedControl.selectedSegmentIndex == 1 {
+//            print("segment 1")
+//            scrollView.removeFromSuperview()
+//        } else {
+//            print(segmentedControl.selectedSegmentIndex)
+//        }
+//    }
     
     override func viewWillDisappear(animated: Bool) {
         if let viewWithTag = self.view.viewWithTag(100) {
@@ -100,3 +128,8 @@ class StanfordViewController: UIViewController {
 
 }
 
+
+//guard let dateVals = CSVParser.sharedInstance.stringData["date"], timeVals = CSVParser.sharedInstance.stringData["time"], stanfordVals = CSVParser.sharedInstance.numericalData["stanford"], else {
+//    print("Data not assigned properly")
+//    return
+//}
