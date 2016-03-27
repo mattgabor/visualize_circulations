@@ -24,6 +24,7 @@
 		889279C71CA088110012F028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889279C51CA088110012F028 /* Main.storyboard */; };
 		889279C91CA088110012F028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889279C81CA088110012F028 /* Assets.xcassets */; };
 		889279CC1CA088110012F028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889279CA1CA088110012F028 /* LaunchScreen.storyboard */; };
+		88BEA22D1CA43FF8003ABF88 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BEA22C1CA43FF8003ABF88 /* CSwiftV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		889279C81CA088110012F028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889279CB1CA088110012F028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889279CD1CA088110012F028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BEA22C1CA43FF8003ABF88 /* CSwiftV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSwiftV.swift; path = CSwiftV/CSwiftV/CSwiftV.swift; sourceTree = "<group>"; };
 		EE7A3D2D343F9923F951865E /* Pods-Circulations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circulations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Circulations/Pods-Circulations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				883467A41CA0A90400F6806F /* OhloneViewController.swift */,
 				886104691CA1075B00B614CF /* CombinedViewController.swift */,
 				8861046B1CA10BE900B614CF /* Datasets.swift */,
+				88BEA22C1CA43FF8003ABF88 /* CSwiftV.swift */,
 				886104951CA119B500B614CF /* Datapoint.swift */,
 				889279C51CA088110012F028 /* Main.storyboard */,
 				889279C81CA088110012F028 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 				8861046A1CA1075B00B614CF /* CombinedViewController.swift in Sources */,
 				8834679F1CA09B7300F6806F /* DetailViewController.swift in Sources */,
 				886104731CA116D900B614CF /* Model.xcdatamodeld in Sources */,
+				88BEA22D1CA43FF8003ABF88 /* CSwiftV.swift in Sources */,
 				889279C41CA088110012F028 /* StanfordViewController.swift in Sources */,
 				886104681CA1052D00B614CF /* Enums.swift in Sources */,
 				889279C21CA088110012F028 /* AppDelegate.swift in Sources */,

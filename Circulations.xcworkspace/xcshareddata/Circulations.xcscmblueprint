@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "640F9FFC7D04D04BC95B3B7D27B6F824CC1AC38C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "640F9FFC7D04D04BC95B3B7D27B6F824CC1AC38C" : 0,
+    "7DBE340E54035B9D4CAFC6611E537A77B4E2F088" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BEBA0DEA-5B0B-4286-8BB7-333122827074",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "640F9FFC7D04D04BC95B3B7D27B6F824CC1AC38C" : "Circulations\/",
+    "7DBE340E54035B9D4CAFC6611E537A77B4E2F088" : "Circulations\/Circulations\/CSwiftV\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Circulations",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Circulations.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mattgabor\/visualize_circulations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "640F9FFC7D04D04BC95B3B7D27B6F824CC1AC38C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Daniel1of1\/CSwiftV.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7DBE340E54035B9D4CAFC6611E537A77B4E2F088"
+    }
+  ]
+}

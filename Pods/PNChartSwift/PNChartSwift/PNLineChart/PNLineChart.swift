@@ -424,7 +424,8 @@ public class PNLineChart: UIView{
             
             CATransaction.begin()
             let pathAnimation:CABasicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-            pathAnimation.duration = 1.0
+            // Adjust speed here
+            pathAnimation.duration = 3.0
             pathAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             pathAnimation.fromValue = 0.0
             pathAnimation.toValue   = 1.0
