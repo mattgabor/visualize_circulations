@@ -1,20 +1,9 @@
 PODS:
-  - Charts/Core (2.2.3)
-  - Charts/Realm (2.2.3):
-    - Charts/Core
-    - RealmSwift (~> 0.97)
   - PNChartSwift (0.0.2)
-  - Realm (0.98.5):
-    - Realm/Headers (= 0.98.5)
-  - Realm/Headers (0.98.5)
-  - RealmSwift (0.98.5):
-    - Realm (= 0.98.5)
   - SwiftCSV (0.2.2)
 
 DEPENDENCIES:
-  - Charts/Realm
   - PNChartSwift (from `https://github.com/kevinzhow/PNChart-Swift.git`)
-  - RealmSwift
   - SwiftCSV
 
 EXTERNAL SOURCES:
@@ -27,10 +16,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/kevinzhow/PNChart-Swift.git
 
 SPEC CHECKSUMS:
-  Charts: f54267bb3f0f0e74520c6f248517cf5074dfd6fc
   PNChartSwift: bcdfbffd65920072463eff42d0dfb46189bf4495
-  Realm: db08379969e45cea2edd1c3c0a090fe9e22d2d2f
-  RealmSwift: cb11ad1c35e15dc982f2dbf5afe2a3124193a358
   SwiftCSV: 29106dc25a7eca542a80486ae7f0ee19ccd37b9f
 
 COCOAPODS: 0.39.0

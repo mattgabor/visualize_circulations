@@ -4,27 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Charts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>PNChartSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Circulations.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Realm.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,27 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86FCAFBE3ACE0BF6FEB45151E8D15D55</key>
+		<key>7668C987C20AE2430EFFDDFD451E2375</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9062DB0316C67DC5F9D0B8CDCBFCE50A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BED06248948BAA66071D68D17609D08E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F831852D7F125168B1EF17FC76AB893C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA073A2B6A40241050D91303EE6DF561</key>
+		<key>E778A707F59C211F11275F0AB054FFB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

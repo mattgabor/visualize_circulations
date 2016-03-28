@@ -11,14 +11,12 @@
 		8834679F1CA09B7300F6806F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834679D1CA09B7300F6806F /* DetailViewController.swift */; };
 		883467A01CA09B7300F6806F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834679E1CA09B7300F6806F /* MasterViewController.swift */; };
 		883467A51CA0A90400F6806F /* OhloneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883467A41CA0A90400F6806F /* OhloneViewController.swift */; };
-		8852F84B1CA12AF300C5DA4A /* mission_peak_data_min.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8852F84A1CA12AF300C5DA4A /* mission_peak_data_min.csv */; };
+		8852F84B1CA12AF300C5DA4A /* mission_peak_data_jan.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8852F84A1CA12AF300C5DA4A /* mission_peak_data_jan.csv */; };
 		886104681CA1052D00B614CF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886104671CA1052D00B614CF /* Enums.swift */; };
 		8861046A1CA1075B00B614CF /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886104691CA1075B00B614CF /* CombinedViewController.swift */; };
 		8861046C1CA10BE900B614CF /* Datasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861046B1CA10BE900B614CF /* Datasets.swift */; };
 		8861046E1CA10E8C00B614CF /* mission_peak_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8861046D1CA10E8C00B614CF /* mission_peak_data.csv */; };
 		886104701CA116B300B614CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8861046F1CA116B300B614CF /* CoreData.framework */; };
-		886104731CA116D900B614CF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 886104711CA116D900B614CF /* Model.xcdatamodeld */; };
-		886104961CA119B500B614CF /* Datapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886104951CA119B500B614CF /* Datapoint.swift */; };
 		889279C21CA088110012F028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889279C11CA088110012F028 /* AppDelegate.swift */; };
 		889279C41CA088110012F028 /* StanfordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889279C31CA088110012F028 /* StanfordViewController.swift */; };
 		889279C71CA088110012F028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889279C51CA088110012F028 /* Main.storyboard */; };
@@ -33,14 +31,12 @@
 		8834679D1CA09B7300F6806F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8834679E1CA09B7300F6806F /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		883467A41CA0A90400F6806F /* OhloneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OhloneViewController.swift; sourceTree = "<group>"; };
-		8852F84A1CA12AF300C5DA4A /* mission_peak_data_min.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mission_peak_data_min.csv; sourceTree = "<group>"; };
+		8852F84A1CA12AF300C5DA4A /* mission_peak_data_jan.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mission_peak_data_jan.csv; sourceTree = "<group>"; };
 		886104671CA1052D00B614CF /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		886104691CA1075B00B614CF /* CombinedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		8861046B1CA10BE900B614CF /* Datasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datasets.swift; sourceTree = "<group>"; };
 		8861046D1CA10E8C00B614CF /* mission_peak_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mission_peak_data.csv; sourceTree = "<group>"; };
 		8861046F1CA116B300B614CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		886104721CA116D900B614CF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		886104951CA119B500B614CF /* Datapoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datapoint.swift; sourceTree = "<group>"; };
 		889279BE1CA088110012F028 /* Circulations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circulations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889279C11CA088110012F028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		889279C31CA088110012F028 /* StanfordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordViewController.swift; sourceTree = "<group>"; };
@@ -104,18 +100,16 @@
 		889279C01CA088110012F028 /* Circulations */ = {
 			isa = PBXGroup;
 			children = (
-				886104711CA116D900B614CF /* Model.xcdatamodeld */,
 				883467A11CA0A11100F6806F /* Example */,
 				889279C11CA088110012F028 /* AppDelegate.swift */,
 				889279C31CA088110012F028 /* StanfordViewController.swift */,
 				886104671CA1052D00B614CF /* Enums.swift */,
 				8861046D1CA10E8C00B614CF /* mission_peak_data.csv */,
-				8852F84A1CA12AF300C5DA4A /* mission_peak_data_min.csv */,
+				8852F84A1CA12AF300C5DA4A /* mission_peak_data_jan.csv */,
 				883467A41CA0A90400F6806F /* OhloneViewController.swift */,
 				886104691CA1075B00B614CF /* CombinedViewController.swift */,
 				8861046B1CA10BE900B614CF /* Datasets.swift */,
 				88BEA22C1CA43FF8003ABF88 /* CSwiftV.swift */,
-				886104951CA119B500B614CF /* Datapoint.swift */,
 				889279C51CA088110012F028 /* Main.storyboard */,
 				889279C81CA088110012F028 /* Assets.xcassets */,
 				889279CA1CA088110012F028 /* LaunchScreen.storyboard */,
@@ -200,7 +194,7 @@
 				889279C91CA088110012F028 /* Assets.xcassets in Resources */,
 				8861046E1CA10E8C00B614CF /* mission_peak_data.csv in Resources */,
 				889279C71CA088110012F028 /* Main.storyboard in Resources */,
-				8852F84B1CA12AF300C5DA4A /* mission_peak_data_min.csv in Resources */,
+				8852F84B1CA12AF300C5DA4A /* mission_peak_data_jan.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,11 +255,9 @@
 			files = (
 				883467A01CA09B7300F6806F /* MasterViewController.swift in Sources */,
 				883467A51CA0A90400F6806F /* OhloneViewController.swift in Sources */,
-				886104961CA119B500B614CF /* Datapoint.swift in Sources */,
 				8861046C1CA10BE900B614CF /* Datasets.swift in Sources */,
 				8861046A1CA1075B00B614CF /* CombinedViewController.swift in Sources */,
 				8834679F1CA09B7300F6806F /* DetailViewController.swift in Sources */,
-				886104731CA116D900B614CF /* Model.xcdatamodeld in Sources */,
 				88BEA22D1CA43FF8003ABF88 /* CSwiftV.swift in Sources */,
 				889279C41CA088110012F028 /* StanfordViewController.swift in Sources */,
 				886104681CA1052D00B614CF /* Enums.swift in Sources */,
@@ -428,19 +420,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		886104711CA116D900B614CF /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				886104721CA116D900B614CF /* Model.xcdatamodel */,
-			);
-			currentVersion = 886104721CA116D900B614CF /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 889279B61CA088110012F028 /* Project object */;
 }

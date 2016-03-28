@@ -18,23 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Number of Visitors at Each Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-kJ-y7Y">
+                                <rect key="frame" x="143.5" y="120" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kzB-CZ-oMV">
                                 <rect key="frame" x="219" y="72" width="162" height="29"/>
                                 <segments>
                                     <segment title="Line Chart"/>
                                     <segment title="Bar Chart"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="f5b-jX-PQM"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kzB-CZ-oMV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="199" id="9SF-kV-SSQ"/>
+                            <constraint firstItem="UDq-kJ-y7Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tgm-ht-KxV"/>
+                            <constraint firstItem="UDq-kJ-y7Y" firstAttribute="top" secondItem="kzB-CZ-oMV" secondAttribute="bottom" constant="20" id="nmt-Vs-rB2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kzB-CZ-oMV" secondAttribute="trailing" constant="199" id="oUd-XM-s1b"/>
                             <constraint firstItem="kzB-CZ-oMV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wIk-k4-oSm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Stanford Entrance Visitors" id="a4S-5j-m7h"/>
+                    <navigationItem key="navigationItem" title="Stanford Entrance Visitors in January" id="a4S-5j-m7h"/>
                     <connections>
+                        <outlet property="chartLabel" destination="UDq-kJ-y7Y" id="OOE-Sn-ax8"/>
                         <outlet property="segmentedControl" destination="kzB-CZ-oMV" id="pHV-pJ-tKb"/>
                     </connections>
                 </viewController>

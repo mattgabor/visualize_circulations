@@ -84,16 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Circulations/Charts.framework"
   install_framework "Pods-Circulations/PNChartSwift.framework"
-  install_framework "Pods-Circulations/Realm.framework"
-  install_framework "Pods-Circulations/RealmSwift.framework"
   install_framework "Pods-Circulations/SwiftCSV.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Circulations/Charts.framework"
   install_framework "Pods-Circulations/PNChartSwift.framework"
-  install_framework "Pods-Circulations/Realm.framework"
-  install_framework "Pods-Circulations/RealmSwift.framework"
   install_framework "Pods-Circulations/SwiftCSV.framework"
 fi

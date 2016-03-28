@@ -51,7 +51,8 @@ public class PNLineChart: UIView{
                 label.textAlignment = NSTextAlignment.Right
                 label.text = NSString(format:yLabelFormat, Double(yValueMin + (yStep * index))) as String
                 ++index
-                addSubview(label)
+                // took out Y labels
+                // addSubview(label)
             }
         }
     }
@@ -79,8 +80,8 @@ public class PNLineChart: UIView{
             chartPointArray = NSMutableArray(capacity: chartData.count)
             
             // set for point stoken
-            let circle_stroke_width:CGFloat = 2.0
-            let line_width:CGFloat = 3.0
+            let circle_stroke_width:CGFloat = 1.0
+            let line_width:CGFloat = 2.0
             
             for chart : AnyObject in chartData{
                 // create as many chart line layers as there are data-lines
@@ -126,7 +127,7 @@ public class PNLineChart: UIView{
 
             
             if showLabel {
-                print("show y label")
+//                print("show y label")
                 yLabels = yLabelsArray as NSArray
             }
             
@@ -425,7 +426,7 @@ public class PNLineChart: UIView{
             CATransaction.begin()
             let pathAnimation:CABasicAnimation = CABasicAnimation(keyPath: "strokeEnd")
             // Adjust speed here
-            pathAnimation.duration = 3.0
+            pathAnimation.duration = 4.0
             pathAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             pathAnimation.fromValue = 0.0
             pathAnimation.toValue   = 1.0
